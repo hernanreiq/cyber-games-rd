@@ -1,0 +1,74 @@
+[
+    {
+        "nombre": "AMD Radeon HD 7000 de 1GB GDDR3",
+        "precio": 1400,
+        "descripcion": "Disponible en low profile y estándar.",
+        "cantidad_fotos": 2, 
+        "carpeta": "img/productos/AMD HD 7000/",
+        "tipo": "Producto"
+    },
+    {
+        "nombre": "Adaptador de DVI a VGA",
+        "precio": 400,
+        "descripcion": "Este adaptador sirve para poder usar tu monitor con puerto o cable VGA en las tarjetas de vídeo o equipos que tienen el puerto DVI.",
+        "cantidad_fotos": 2,
+        "carpeta":"img/productos/Adaptador DVI a VGA/",
+        "tipo": "Complemento"
+    },
+    {
+        "nombre": "AMD Radeon R5 340X de 2GB GDDR3",
+        "precio": 2900,
+        "descripcion": "Disponible en low profile y estándar.",
+        "cantidad_fotos": 2,
+        "carpeta":"img/productos/AMD R5 340X/",
+        "tipo": "Producto"
+    },
+    {
+        "nombre": "AMD Radeon R7 250 de 2GB GDDR3",
+        "precio": 3500,
+        "descripcion": "Disponible en low profile y estándar.",
+        "cantidad_fotos": 4,
+        "carpeta":"img/productos/AMD R7 250/",
+        "tipo": "Producto"
+    },
+    {
+        "nombre": "AMD Radeon R5 240 de 1GB GDDR3",
+        "precio": 1500,
+        "descripcion": "Disponible en low profile y estándar.",
+        "cantidad_fotos": 1,
+        "carpeta": "img/productos/AMD R5 240/",
+        "tipo": "Producto"
+    },
+    {
+        "nombre": "Adaptador de DVI a HDMI",
+        "precio": 400,
+        "descripcion": "Este adaptador sirve para utilizarlo con las tarjetas de vídeo sin puerto HDMI de fábrica.",
+        "cantidad_fotos": 2,
+        "carpeta":"img/productos/Adaptador DVI a HDMI/",
+        "tipo": "Complemento"
+    },
+    {
+        "nombre": "AMD Radeon HD 6450 de 1GB GDDR3",
+        "precio": 1600,
+        "descripcion":"Disponible en low profile y estándar.",
+        "cantidad_fotos": 5,
+        "carpeta":"img/productos/AMD HD 6450/",
+        "tipo": "Producto"
+    },
+    {
+        "nombre":"AMD Radeon HD 8490 de 1GB GDDR3",
+        "precio": 1500,
+        "descripcion": "Disponible en low profile y estándar.",
+        "cantidad_fotos": 3,
+        "carpeta":"img/productos/AMD HD 8490/",
+        "tipo": "Producto"
+    },
+    {
+        "nombre":"AMD Radeon HD 7570 de 1GB GDDR5",
+        "precio": 1800,
+        "descripcion":"Disponible en low profile y estándar.",
+        "cantidad_fotos": 1,
+        "carpeta":"img/productos/AMD HD 7570/",
+        "tipo": "Producto"
+    }
+]
