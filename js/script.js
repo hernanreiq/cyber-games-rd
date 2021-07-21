@@ -40,7 +40,7 @@ function imprimirTarjetas(articulo, contenedor, n_articulos){
                         <span class="badge badge-success w-100 mb-2"><h5 class="m-0">RD$ ${articulo[id].precio.toLocaleString('en-US')}</h5></span>
                         <p class="card-text">${articulo[id].descripcion}</p>
                         <button onclick="verFotos(${id})" class="btn btn-info w-100 my-2" data-toggle="modal" data-target="#Modal">Ver fotos</button>
-                        <button class="btn btn-success w-100 my-2">Comprar <i class="fab fa-whatsapp"></i></button>
+                        <button onclick="comprarProducto(${id})" class="btn btn-success w-100 my-2" data-toggle="modal" data-target="#Modal">Comprar <i class="fab fa-whatsapp"></i></button>
                     </div>
                     </div>
                 </div>
@@ -51,14 +51,17 @@ function imprimirTarjetas(articulo, contenedor, n_articulos){
     }
 }
 
-//SE DEBE SEÑALAR LA RUTA DEL ARCHIVO JSON Y EL CONTENEDOR DONDE SE VAN A INTEGRAR LOS ARTICULOS
+//SE DEBE SEÑALAR EL CONTENEDOR DONDE SE VAN A INTEGRAR LOS ARTICULOS
 ObtenerProductosJSON(contenedor_productos);
 
 //VARIABLES DEL DOM
 var titulo_modal = document.getElementById('ModalLabel');
 var contenedor_imagenes_carousel = document.getElementById('carousel-inner');
 
+// INSERCION DE LAS FOTOS DENTRO DE LA VENTANA EMERGENTE
 function verFotos(id){
+    document.getElementById('comprar-producto').style.display = "none";
+    document.getElementById('carouselExampleControls').style.display = "block";
     titulo_modal.innerText = productos[id].nombre;
     contenedor_imagenes_carousel.innerHTML = '';
     //DESACTIVANDO LOS CONTROLES DE CAROUSEL CUANDO SOLO HAY UNA IMAGEN
@@ -74,9 +77,33 @@ function verFotos(id){
             var active = '';
         }
         contenedor_imagenes_carousel.innerHTML += `
-            <div class="carousel-item ${active}">
-                <img src="${productos[id].carpeta + i}.jpg" class="d-block w-100" alt="${productos[id].nombre}">
-            </div>
+        <div class="carousel-item ${active}">
+        <img src="${productos[id].carpeta + i}.jpg" class="d-block w-100" alt="${productos[id].nombre}">
+        </div>
         `;
     }
+}
+
+//COMPRAR UN PRODUCTO DE LA TIENDA
+var contenedor_comprar_producto = document.getElementById('comprar-producto');
+
+function comprarProducto(id){
+    var url = "https://api.whatsapp.com/send?phone=18099867406&text=*_Cyber Games RD_*%0AMe interesa comprar:%0A*" + productos[id].nombre + "*%0A¿Cuándo podemos coordinar el pago y el envío?%0A";
+    //DESACTIVANDO EL CAROUSEL
+    contenedor_comprar_producto.style.display = "block";
+    document.getElementById('carouselExampleControls').style.display = "none";
+    titulo_modal.innerText = productos[id].nombre;
+    contenedor_imagenes_carousel.innerHTML = '';
+    contenedor_comprar_producto.innerHTML = `
+        <h2><span class="badge badge-success w-100">RD$ ${productos[id].precio.toLocaleString('en-US')}</span></h2>
+        <p class="text-justify text-danger">El costo de envío no está incluido en el precio del producto.</p>
+        <h3>Métodos de pago disponibles:</h3>
+        <ul>
+            <li class="font-weight-bold">Pago en efectivo.</li>
+            <li class="font-weight-bold">Transferencia al Banreservas.</li>
+            <li class="font-weight-bold">Transferencia al Banco Popular Dominicano.</li>
+        </ul>
+        <h2 class="text-center mb-3">¿Quieres realizar esta compra?</h2>
+        <a href="${url}" class="btn btn-success w-100" target="_blank">Coordinar por WhatsApp <i class="fab fa-whatsapp"></i></a>
+    `;
 }
