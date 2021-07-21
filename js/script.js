@@ -96,7 +96,7 @@ function comprarProducto(id){
     contenedor_imagenes_carousel.innerHTML = '';
     contenedor_comprar_producto.innerHTML = `
         <h2><span class="badge badge-success w-100">RD$ ${productos[id].precio.toLocaleString('en-US')}</span></h2>
-        <p class="text-justify text-danger">El costo de envío no está incluido en el precio del producto.</p>
+        <p class="text-justify text-danger font-weight-bold">El costo de envío no está incluido en el precio del producto.</p>
         <h3>Métodos de pago disponibles:</h3>
         <ul>
             <li class="font-weight-bold">Pago en efectivo.</li>
