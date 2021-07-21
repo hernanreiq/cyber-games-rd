@@ -15,6 +15,11 @@ h2.objetivo, h2{
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: bold;
 }
+.modal-title {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 p.informacion {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;

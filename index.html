@@ -30,10 +30,6 @@
             <section class="px-3 pb-5 mb-5" id="contenedor-productos">
                 <h2 class="text-center">Productos</h2>
             </section>
-            <!-- SECCION DE COMPLEMENTOS - LOS COMPLEMENTOS SE AGREGAN CON JAVASCRIPT -->
-            <section class="px-3 pb-5" id="contenedor-complementos">
-                <h2 class="text-center">Complementos</h2>
-            </section>
         </div>
     </main>
     <footer>
@@ -46,6 +42,40 @@
             </p>
         </div>
     </footer>
+
+    <!-- VENTANA EMERGENTE PARA MOSTRAR LAS FOTOS -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-white" id="ModalLabel">Modal title</h5>
+            </div>
+            <div class="modal-body">
+                <!-- CONTENIDO DE LA VENTANA EMERGENTE -->
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" id="carousel-inner">
+                        <!-- CONTENIDO DEL CAROUSEL SE AGREGA CON JAVASCRIPT -->
+                    </div>
+                        <div id="contenedor-controles-carousel">
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                  </div>
+            </div>
+            <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
     <!--BOOTSTRAP  4-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
