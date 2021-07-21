@@ -88,7 +88,7 @@ function verFotos(id){
 var contenedor_comprar_producto = document.getElementById('comprar-producto');
 
 function comprarProducto(id){
-    var url = "https://api.whatsapp.com/send?phone=18099867406&text=*_Cyber Games RD_*%0AMe interesa comprar:%0A*" + productos[id].nombre + "*%0A¿Cuándo podemos coordinar el pago y el envío?%0A";
+    var url = "https://api.whatsapp.com/send?phone=18297753369&text=*_Cyber Games RD_*%0AMe interesa comprar:%0A*" + productos[id].nombre + "*%0A¿Cuándo podemos coordinar el pago y el envío?%0A";
     //DESACTIVANDO EL CAROUSEL
     contenedor_comprar_producto.style.display = "block";
     document.getElementById('carouselExampleControls').style.display = "none";
