@@ -36,7 +36,7 @@ main {
     background: -webkit-linear-gradient(to top, #1e252f, #f36655);  
     background: linear-gradient(to top, #1e252f, #f36655); 
 }
-.productos {
+section {
     background: #1e252fcc;  
     border-radius: 3px;
     border: solid 1px #ffffff41;
@@ -47,8 +47,11 @@ main h2 {
     padding: 20px 0px;
 }
 .card {
-    background-color: #f36655;
+    background-color: #0d1014;
     color: #fff;
+}
+.card-img-top {
+    height: 300px;
 }
 .card-body p {
     padding: 5px 7px;

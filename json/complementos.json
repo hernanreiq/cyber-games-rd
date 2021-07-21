@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "Adaptador de DVI a VGA",
+        "precio": 400,
+        "descripcion": "Este adaptador sirve para poder usar tu monitor con puerto o cable VGA en las tarjetas de vídeo o equipos que tienen el puerto DVI.",
+        "cantidad_fotos": 2,
+        "carpeta":"img/productos/Adaptador DVI a VGA/",
+        "tipo": "Complemento"
+    },
+    {
+        "nombre": "Adaptador de DVI a HDMI",
+        "precio": 400,
+        "descripcion": "Este adaptador sirve para poder usar tu monitor con puerto o cable HDMI en las tarjetas de vídeo o equipos que tienen el puerto DVI.",
+        "carpeta":"img/productos/Adaptador DVI a HDMI/",
+        "tipo": "Complemento"
+    }
+]
