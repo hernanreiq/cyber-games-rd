@@ -1,5 +1,37 @@
 [
     {
+        "nombre": "GT 730 de 2GB - HDMI, VGA y DVI",
+        "precio": 3500,
+        "descripcion": "Disponible en low profile y estándar.",
+        "cantidad_fotos": 3, 
+        "carpeta": "img/productos/GT 730/",
+        "tipo": "Producto"
+    },
+    {
+        "nombre": "AMD FirePro V3900 1GB a 128 bits",
+        "precio": 1750,
+        "descripcion": "Disponible en low profile y estándar.",
+        "cantidad_fotos": 3, 
+        "carpeta": "img/productos/AMD FirePro V3900/",
+        "tipo": "Producto"
+    },
+    {
+        "nombre": "AMD Radeon R5 430 de 1GB GDDR5",
+        "precio": 1800,
+        "descripcion": "Disponible en low profile y estándar.",
+        "cantidad_fotos": 2, 
+        "carpeta": "img/productos/AMD R5 430/",
+        "tipo": "Producto"
+    },
+    {
+        "nombre": "AMD Radeon HD 8570 de 1GB a 128 bits",
+        "precio": 1800,
+        "descripcion": "Disponible en low profile y estándar.",
+        "cantidad_fotos": 2, 
+        "carpeta": "img/productos/AMD HD 8570/",
+        "tipo": "Producto"
+    },
+    {
         "nombre": "AMD Radeon HD 7000 de 1GB GDDR3",
         "precio": 1400,
         "descripcion": "Disponible en low profile y estándar.",
@@ -9,7 +41,7 @@
     },
     {
         "nombre": "AMD Radeon R5 340X de 2GB GDDR3",
-        "precio": 2900,
+        "precio": 2600,
         "descripcion": "Disponible en low profile y estándar.",
         "cantidad_fotos": 2,
         "carpeta":"img/productos/AMD R5 340X/",
@@ -33,7 +65,7 @@
     },
     {
         "nombre": "AMD Radeon HD 6450 de 1GB GDDR3",
-        "precio": 1600,
+        "precio": 1800,
         "descripcion":"Disponible en low profile y estándar.",
         "cantidad_fotos": 5,
         "carpeta":"img/productos/AMD HD 6450/",
@@ -54,6 +86,14 @@
         "cantidad_fotos": 1,
         "carpeta":"img/productos/AMD HD 7570/",
         "tipo": "Producto"
+    },
+    {
+        "nombre": "Memorias RAM DDR3 de 4GB",
+        "precio": 1000,
+        "descripcion": "Aumenta el rendimiento de tu computadora con estas asequibles Memorias RAM nuevas (Precio por Unidad).",
+        "cantidad_fotos": 1,
+        "carpeta":"img/productos/Memoria Ram DDR3/",
+        "tipo": "Complemento"
     },
     {
         "nombre": "Adaptador de DVI a HDMI",
